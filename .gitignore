@@ -14,6 +14,7 @@ build/
 *.a
 *.so
 *.so.*
+.cache/
 
 # 测试可执行文件
 
@@ -21,17 +22,4 @@ build/
 Testing/
 *.log
 *.d
-
-# IDE 和编辑器相关
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# macOS 下的垃圾文件
-.DS_Store
-
-# Linux core dump
-core
 
