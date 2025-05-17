@@ -52,7 +52,6 @@ public:
     EventLoop* ownerLoop() {return loop_;}
     void remove();
 private:
-
     void update();
     void handleEventWithGuard(Timestamp receiveTime);
 
