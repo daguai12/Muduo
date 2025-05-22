@@ -8,6 +8,7 @@
 #include <mutex>
 #include <functional>
 
+using namespace CurrentThread;
 
 class Channel;
 class Poller;
