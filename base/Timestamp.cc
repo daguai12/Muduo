@@ -2,6 +2,9 @@
 #include <cstdio>
 #include <ctime>
 
+Timestamp::Timestamp()
+{}
+
 Timestamp::Timestamp(int64_t microSecondsSinceEpochArg)
 :microSecondsSinceEpoch_(microSecondsSinceEpochArg)
 {
