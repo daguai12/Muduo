@@ -2,13 +2,15 @@
 #include <sys/syscall.h>
 #include <unistd.h>
 
-__thread int t_cacheTid = 0;
+namespace CurrentThread
+{
+__thread int t_cachedTid = 0;
+}
 
 void CurrentThread::cacheTid()
 {
-    if (t_cacheTid == 0)
+    if (t_cachedTid == 0)
     {
-        t_cacheTid = static_cast<pid_t>(::syscall(SYS_gettid));
+        t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
     }
 }
-
